@@ -1,7 +1,5 @@
 *{
     font-family: 'Anton', sans-serif;
-    letter-spacing: 1px;
-    font-style: italic;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +7,8 @@ html{
     height: 100%;
 }
 body{
-    margin: 0;
+    letter-spacing: 1px;
+    font-style: italic;
     background: linear-gradient(to right, rgb(0, 180, 219), rgb(0, 131, 176));
     height: 100%;
 }
@@ -25,17 +24,20 @@ body{
 h1{
     font-size: 64px;
     transition: font-size 0.5s linear;
+    z-index: 9999;
 }
 
 h2{
     font-size: 25px;
     margin-bottom: 10px;
+    z-index: 9999;
 }
 
 .social-icons i{
     font-size: 32px;
     color: #000;
     transition: all 0.2s linear;
+    z-index: 9999;
 }
 .social-icons i:hover{
     color: #fff;
@@ -51,6 +53,10 @@ h1:hover{
 }
 
 #particles-js{
-    position: absolute;
-    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
 }
