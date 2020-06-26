@@ -8,11 +8,9 @@ html{
 }
 body{
     letter-spacing: 1px;
-    font-style: italic;
     background: linear-gradient(to right, rgb(0, 180, 219), rgb(0, 131, 176));
     height: 100%;
 }
-
 .container{
     display: flex;
     justify-content: center;
@@ -23,33 +21,32 @@ body{
 
 h1{
     font-size: 64px;
-    transition: font-size 0.5s linear;
+    transition: all 0.5s;
     z-index: 9999;
 }
-
+h1:hover{
+    font-size: 70px;
+    cursor: pointer;
+}
 h2{
     font-size: 25px;
+    z-index: 99;
     margin-bottom: 10px;
-    z-index: 9999;
 }
 
+.social-icons{
+    height: 77.5px;
+    z-index: 99;
+}
 .social-icons i{
+    padding: 0 5px;
     font-size: 32px;
     color: #000;
     transition: all 0.2s linear;
-    z-index: 9999;
 }
 .social-icons i:hover{
     color: #fff;
     font-size: 40px;
-}
-
-h1:hover{
-    font-size: 84px;
-}
-
-.fade{
-    opacity: 0;
 }
 
 #particles-js{
@@ -58,5 +55,12 @@ h1:hover{
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 0;
+}
+
+.fade{
+    opacity: 0;
+}
+.white-text{
+    color: #fff;
 }
